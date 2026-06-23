@@ -174,6 +174,23 @@ p{ margin: 0 0 1rem; }
   }
 }
 
+/* ============================ Service breadcrumb ============================ */
+.svc-breadcrumb{ background: var(--ink-2); border-bottom:1px solid var(--line-dk); }
+.svc-breadcrumb .wrap{ padding-block:.7rem; font-size:.82rem; text-transform:uppercase; letter-spacing:.07em; color:#A79E92; }
+.svc-breadcrumb a{ color:#D7D1C8; text-decoration:none; }
+.svc-breadcrumb a:hover{ color: var(--mark); }
+.svc-breadcrumb span{ color:#7E766B; margin-inline:.15rem; }
+
+/* ============================ Service hero ============================ */
+.svc-hero{ background: var(--ink); color:#fff; padding-block: clamp(2.4rem,5vw,3.6rem); }
+.svc-hero-grid{ display:grid; grid-template-columns:1fr; gap:1.8rem; align-items:center; }
+.svc-hero h1{ color:#fff; font-size: clamp(2.2rem,5.5vw,3.6rem); }
+.svc-hero .hero-sub{ margin-bottom:1.3rem; }
+.svc-hero-img{ width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: var(--radius); }
+@media (min-width: 820px){
+  .svc-hero-grid{ grid-template-columns: 1.05fr .95fr; gap:2.8rem; }
+}
+
 /* ============================ Generic section ============================ */
 .section{ padding-block: var(--sect); }
 .section.tight{ padding-block: clamp(2.5rem,5vw,3.5rem); }
